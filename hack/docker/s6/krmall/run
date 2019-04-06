@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if test -f ./setup; then
+    source ./setup
+fi
+
+export USER=krmall
+exec gosu $USER /app/krmall/krmall serve --config /data/krmall/conf/app.toml

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cd /app/krmall
+
+# Link volumed data with app data
+ln -sfn /data/krmall/log  ./log
+ln -sfn /data/krmall/data ./data
